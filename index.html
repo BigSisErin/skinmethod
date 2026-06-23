@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S·K·I·N· Method / Brand Identity — Presentation 01</title>
+  <title>S·K·I·N· Method — Brand Identity | Big Sis Creative Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -38,12 +38,17 @@
     }
 
     html { scroll-behavior: smooth; }
-    body { font-family: var(--ff-body); background: var(--bg); color: var(--text); }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+    }
 
     h1, h2, h3, h4, h5, h6 { font-weight: 400; }
-    img { max-width: 100%; display: block; }
 
-    /* ── NAV ── */
+    /* NAV */
     nav {
       position: sticky; top: 0; z-index: 100;
       height: 60px; padding: 0 40px;
@@ -54,18 +59,17 @@
     }
     .nav-project {
       font-family: var(--ff-body);
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 600;
-      letter-spacing: .10em;
-      text-transform: uppercase;
-      color: var(--text-mid);
+      letter-spacing: .04em;
+      color: var(--text);
     }
-    .nav-links { display: flex; gap: 32px; }
+    .nav-links { display: flex; gap: 28px; }
     .nav-links a {
       font-family: var(--ff-body);
       font-size: 12px;
       font-weight: 500;
-      letter-spacing: .06em;
+      letter-spacing: .08em;
       text-transform: uppercase;
       color: var(--text-mid);
       text-decoration: none;
@@ -73,22 +77,19 @@
     }
     .nav-links a:hover { color: var(--red); }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero {
       min-height: calc(100vh - 60px);
       background: var(--bg-dark);
-      display: flex;
-      align-items: flex-end;
+      display: flex; align-items: flex-end;
       padding: 80px 40px;
-      position: relative;
-      overflow: hidden;
     }
     .hero-inner { max-width: 960px; width: 100%; }
-    .hero-eyebrow {
+    .hero-label {
       color: var(--red);
       font-family: var(--ff-body);
       font-size: 12px;
-      letter-spacing: .14em;
+      letter-spacing: .16em;
       text-transform: uppercase;
       font-weight: 600;
       margin-bottom: 24px;
@@ -96,32 +97,29 @@
     .hero-h1 {
       font-family: var(--ff-display);
       font-weight: 400;
-      font-size: clamp(48px, 8vw, 88px);
+      font-size: clamp(48px, 8vw, 96px);
       color: var(--text-inv);
       line-height: 1.0;
-      margin-bottom: 28px;
+      margin-bottom: 32px;
     }
     .hero-sub {
       font-family: var(--ff-body);
       font-size: 18px;
-      font-weight: 300;
+      font-weight: 400;
       color: var(--text-inv-mid);
-      max-width: 560px;
       line-height: 1.6;
+      max-width: 560px;
       margin-bottom: 40px;
     }
     .hero-meta {
+      color: var(--text-inv-mid);
       font-family: var(--ff-body);
       font-size: 13px;
-      color: var(--text-inv-mid);
-      display: flex;
-      gap: 24px;
-      align-items: center;
+      letter-spacing: .04em;
     }
-    .hero-meta span { opacity: .4; }
 
-    /* ── SECTION BASE ── */
-    .sec { padding: 88px 40px; }
+    /* SECTIONS */
+    .sec { padding: 80px 40px; }
     .sec-inner { max-width: 960px; margin: 0 auto; }
     .sec-bar { width: 48px; height: 3px; background: var(--red); margin-bottom: 16px; }
     .sec-label {
@@ -136,57 +134,53 @@
     .sec-h2 {
       font-family: var(--ff-display);
       font-weight: 400;
-      font-size: clamp(30px, 4.5vw, 52px);
+      font-size: clamp(32px, 5vw, 56px);
       line-height: 1.1;
       color: var(--text);
-      margin-bottom: 16px;
+      margin-bottom: 40px;
     }
-    .sec-h2-inv { color: var(--text-inv); }
-    .sec-label-inv { color: rgba(244,242,234,0.45); }
-    .sec-bar-inv { background: var(--red); }
-    .sec-intro {
+    .sec-body {
       font-family: var(--ff-body);
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.75;
       color: var(--text-mid);
       max-width: 680px;
-      margin-bottom: 48px;
+      margin-bottom: 32px;
     }
 
-    /* ── WHAT THIS IS / ISN'T ── */
+    /* YES / NO CARDS */
     .yn-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
-      margin-top: 48px;
+      margin-top: 40px;
     }
     .yn-card {
       background: var(--bg-3);
-      padding: 36px;
+      padding: 32px;
       border-radius: 2px;
     }
-    .yn-card.yn-yes { border-top: 3px solid var(--teal); }
-    .yn-card.yn-no  { border-top: 3px solid var(--red); }
-    .yn-card-label {
+    .yn-label {
       font-family: var(--ff-body);
       font-size: 11px;
-      font-weight: 700;
       letter-spacing: .14em;
       text-transform: uppercase;
+      font-weight: 700;
       margin-bottom: 20px;
     }
-    .yn-yes .yn-card-label { color: var(--teal); }
-    .yn-no  .yn-card-label { color: var(--red); }
-    .yn-card ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-    .yn-card ul li {
+    .yn-yes .yn-label { color: var(--teal); }
+    .yn-no  .yn-label { color: var(--text-dim); }
+    .yn-card ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .yn-card li {
       font-family: var(--ff-body);
       font-size: 15px;
-      line-height: 1.55;
+      font-weight: 500;
       color: var(--text);
+      line-height: 1.45;
     }
 
-    /* ── AGENDA ── */
-    .agenda-list { display: flex; flex-direction: column; gap: 0; margin-top: 48px; }
+    /* AGENDA */
+    .agenda-list { display: flex; flex-direction: column; }
     .agenda-item {
       display: flex;
       align-items: flex-start;
@@ -198,221 +192,217 @@
     .agenda-num {
       font-family: var(--ff-display);
       font-weight: 400;
-      font-size: 64px;
+      font-size: 72px;
       color: var(--text-dim);
       line-height: 1;
       min-width: 80px;
     }
-    .agenda-content strong {
+    .agenda-text { padding-top: 10px; }
+    .agenda-text strong {
+      display: block;
       font-family: var(--ff-body);
       font-size: 18px;
       font-weight: 700;
-      display: block;
-      margin-bottom: 6px;
       color: var(--text);
+      margin-bottom: 6px;
     }
-    .agenda-content p {
+    .agenda-text p {
       font-family: var(--ff-body);
       font-size: 15px;
-      line-height: 1.6;
       color: var(--text-mid);
+      line-height: 1.6;
     }
 
-    /* ── CONCEPT CARDS ── */
+    /* CONCEPT CARDS */
     .concept-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 24px;
-      margin-top: 48px;
+      margin-top: 16px;
     }
     .concept-card {
       background: var(--bg-2);
       border-radius: 2px;
       overflow: hidden;
     }
-    .concept-img-placeholder {
+    .concept-img {
       width: 100%;
       aspect-ratio: 4/3;
-      background: var(--bg-3);
+      background: var(--bg-4);
       display: flex;
       align-items: center;
       justify-content: center;
-      border-bottom: 1px solid var(--rule);
     }
-    .placeholder-label {
+    .concept-img-placeholder {
       font-family: var(--ff-body);
       font-size: 11px;
-      font-weight: 600;
-      letter-spacing: .10em;
+      letter-spacing: .1em;
       text-transform: uppercase;
       color: var(--text-dim);
+      font-weight: 600;
+      text-align: center;
+      padding: 20px;
+    }
+    .concept-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
     .concept-body { padding: 28px; }
-    .concept-name {
+    .concept-num {
+      font-family: var(--ff-body);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .concept-body h3 {
       font-family: var(--ff-display);
       font-weight: 400;
       font-size: 22px;
       color: var(--text);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      line-height: 1.2;
     }
-    .concept-desc {
+    .concept-body p {
       font-family: var(--ff-body);
       font-size: 14px;
-      line-height: 1.65;
       color: var(--text-mid);
-      margin-bottom: 20px;
-    }
-    .concept-tag {
-      display: inline-block;
-      font-family: var(--ff-body);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .10em;
-      text-transform: uppercase;
-      color: var(--red);
-      border: 1px solid var(--red);
-      padding: 4px 10px;
-      border-radius: 2px;
+      line-height: 1.65;
     }
 
-    /* ── PROCESS TIMELINE ── */
-    .timeline { display: flex; flex-direction: column; gap: 0; margin-top: 48px; }
-    .timeline-item {
+    /* PROCESS */
+    .process-list { display: flex; flex-direction: column; }
+    .process-item {
       display: grid;
-      grid-template-columns: 120px 1fr;
-      gap: 32px;
+      grid-template-columns: 48px 1fr;
+      gap: 24px;
       padding: 28px 0;
       border-bottom: 1px solid var(--rule);
+      align-items: flex-start;
     }
-    .timeline-item:last-child { border-bottom: none; }
-    .timeline-date {
-      font-family: var(--ff-body);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--red);
-      padding-top: 3px;
+    .process-item:last-child { border-bottom: none; }
+    .process-step {
+      font-family: var(--ff-display);
+      font-weight: 400;
+      font-size: 32px;
+      color: var(--text-dim);
+      line-height: 1;
+      padding-top: 4px;
     }
-    .timeline-content strong {
+    .process-content strong {
+      display: block;
       font-family: var(--ff-body);
       font-size: 16px;
       font-weight: 700;
-      display: block;
-      margin-bottom: 4px;
       color: var(--text);
+      margin-bottom: 4px;
     }
-    .timeline-content p {
+    .process-content p {
       font-family: var(--ff-body);
       font-size: 14px;
-      line-height: 1.6;
       color: var(--text-mid);
+      line-height: 1.6;
     }
 
-    /* ── NEXT STEPS TABLE ── */
+    /* NEXT STEPS */
     .steps-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 48px;
+      margin-top: 16px;
     }
+    .steps-table thead tr { border-bottom: 2px solid var(--red); }
     .steps-table th {
       font-family: var(--ff-body);
       font-size: 11px;
-      font-weight: 700;
       letter-spacing: .12em;
       text-transform: uppercase;
+      font-weight: 700;
       color: var(--text-dim);
+      padding: 12px 16px 12px 0;
       text-align: left;
-      padding: 12px 16px;
-      border-bottom: 2px solid var(--rule);
     }
     .steps-table td {
       font-family: var(--ff-body);
       font-size: 15px;
       color: var(--text);
-      padding: 18px 16px;
-      border-bottom: 1px solid var(--rule);
+      padding: 20px 16px 20px 0;
       vertical-align: top;
       line-height: 1.5;
+      border-bottom: 1px solid var(--rule);
     }
-    .steps-table tr:last-child td { border-bottom: none; }
-    .steps-table tr:hover td { background: var(--bg-2); }
-    .owner-pill {
+    .steps-table td:first-child { font-weight: 500; }
+    .owner-tag {
       display: inline-block;
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
-      letter-spacing: .06em;
+      letter-spacing: .08em;
       text-transform: uppercase;
-      padding: 3px 9px;
+      padding: 3px 10px;
       border-radius: 2px;
     }
-    .owner-bs   { background: var(--red); color: white; }
+    .owner-bs   { background: var(--red);  color: white; }
     .owner-skin { background: var(--teal); color: white; }
-    .owner-both { background: var(--bg-3); color: var(--text-mid); }
+    .owner-both { background: var(--bg-3); color: var(--text); }
 
-    /* ── FOOTER ── */
-    footer {
-      background: var(--bg-dark);
-      padding: 48px 40px;
-      border-top: 3px solid var(--red);
-    }
+    /* FOOTER */
+    footer { background: var(--bg-dark); padding: 48px 40px; }
     .footer-inner {
-      max-width: 960px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      max-width: 960px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px;
     }
     .footer-wordmark {
       font-family: var(--ff-display);
       font-weight: 400;
       font-size: 20px;
       color: var(--text-inv);
-      letter-spacing: .02em;
     }
     .footer-wordmark span { color: var(--red); }
-    .footer-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 6px;
-    }
+    .footer-right { text-align: right; }
     .footer-chip {
       display: inline-block;
       background: var(--red);
       color: white;
       font-family: var(--ff-body);
       font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .10em;
+      letter-spacing: .1em;
       text-transform: uppercase;
+      font-weight: 700;
       padding: 4px 12px;
+      margin-bottom: 8px;
     }
     .footer-credit {
+      display: block;
       color: var(--text-inv-mid);
       font-family: var(--ff-body);
       font-size: 12px;
     }
 
-    /* ── REVEAL ANIMATION ── */
+    /* REVEAL */
     .reveal {
       opacity: 0;
-      transform: translateY(16px);
+      transform: translateY(18px);
       transition: opacity .5s ease, transform .5s ease;
     }
     .reveal.visible { opacity: 1; transform: none; }
 
-    /* ── RESPONSIVE ── */
+    /* RESPONSIVE */
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
-      .nav-links { display: none; }
-      .hero { padding: 48px 20px; }
-      .sec { padding: 64px 20px; }
+      .nav-links { gap: 16px; }
+      .hero { padding: 60px 20px; }
+      .sec  { padding: 60px 20px; }
       .yn-grid { grid-template-columns: 1fr; }
       .concept-grid { grid-template-columns: 1fr; }
-      .timeline-item { grid-template-columns: 1fr; gap: 8px; }
-      footer { padding: 40px 20px; }
-      .footer-inner { flex-direction: column; gap: 24px; align-items: flex-start; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .footer-right { text-align: left; }
+    }
+    @media (max-width: 480px) {
+      .nav-links { display: none; }
     }
   </style>
 </head>
@@ -422,54 +412,47 @@
   <nav>
     <span class="nav-project">S·K·I·N· Method / Presentation 01</span>
     <div class="nav-links">
-      <a href="#what-this-is">About This</a>
-      <a href="#agenda">Agenda</a>
+      <a href="#scope">Scope</a>
       <a href="#concepts">Concepts</a>
       <a href="#process">Process</a>
-      <a href="#next-steps">Next Steps</a>
+      <a href="#next">Next Steps</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-inner">
-      <div class="hero-eyebrow reveal">S·K·I·N· Method</div>
-      <h1 class="hero-h1 reveal">Brand Identity<br>Presentation 01</h1>
-      <p class="hero-sub reveal">Three directions. One is you. Let's find it.</p>
-      <div class="hero-meta reveal">
-        <span>Big Sis Creative Studio</span>
-        <span>·</span>
-        <span>06.26.2026</span>
-      </div>
+      <div class="hero-label">S·K·I·N· Method &nbsp;·&nbsp; Madison, WI</div>
+      <h1 class="hero-h1">Brand Identity<br>Presentation 01</h1>
+      <p class="hero-sub">Logo concepts, visual direction, and brand foundation for S·K·I·N· Method — an aesthetics studio rooted in results, precision, and skin that speaks for itself.</p>
+      <div class="hero-meta">Presentation 01 &nbsp;·&nbsp; Big Sis Creative Studio &nbsp;·&nbsp; 06.2026</div>
     </div>
   </section>
 
-  <!-- WHAT THIS IS / ISN'T -->
-  <section class="sec" id="what-this-is" style="background: var(--bg);">
+  <!-- WHAT THIS IS -->
+  <section class="sec" id="scope" style="background: var(--bg);">
     <div class="sec-inner">
       <div class="sec-bar reveal"></div>
-      <div class="sec-label reveal">Context</div>
-      <h2 class="sec-h2 reveal">What we're here to do</h2>
-      <p class="sec-intro reveal">This is the first look. We've done the work to get here — the intake, the research, the conversations. What you're seeing today are three distinct brand directions, each built from a real insight about S·K·I·N· Method. None of them are half-baked options. All of them could work. Only one of them is actually you.</p>
-      <div class="yn-grid">
-        <div class="yn-card yn-yes reveal">
-          <div class="yn-card-label">This is</div>
+      <div class="sec-label reveal">What this is</div>
+      <h2 class="sec-h2 reveal">Where we're at.</h2>
+      <p class="sec-body reveal">This is Presentation 01: logo concepts and visual direction. Nothing here is final — this is an active conversation. We want your gut reaction, your instincts, what lands and what doesn't. The work gets sharper when you're honest with us.</p>
+      <div class="yn-grid reveal">
+        <div class="yn-card yn-yes">
+          <div class="yn-label">This is</div>
           <ul>
-            <li>→ Three fully considered brand directions</li>
-            <li>→ A starting point for real conversation</li>
-            <li>→ Your chance to react honestly — gut first</li>
-            <li>→ A collaborative decision, not a reveal</li>
-            <li>→ The foundation everything else builds on</li>
+            <li>→ First look at logo concepts</li>
+            <li>→ Visual direction and brand feel</li>
+            <li>→ A starting point for dialogue</li>
+            <li>→ Your space to react honestly</li>
           </ul>
         </div>
-        <div class="yn-card yn-no reveal">
-          <div class="yn-card-label">This isn't</div>
+        <div class="yn-card yn-no">
+          <div class="yn-label">This isn't</div>
           <ul>
-            <li>→ A final deliverable</li>
-            <li>→ A test with a right answer</li>
-            <li>→ A pick-your-favorite exercise</li>
-            <li>→ Set in stone — refinement is part of the process</li>
-            <li>→ Rushed — we move when it feels right</li>
+            <li>→ Final work</li>
+            <li>→ A vote between A, B, or C</li>
+            <li>→ Locked color or type decisions</li>
+            <li>→ The full brand system yet</li>
           </ul>
         </div>
       </div>
@@ -480,121 +463,110 @@
   <section class="sec" id="agenda" style="background: var(--bg-2);">
     <div class="sec-inner">
       <div class="sec-bar reveal"></div>
-      <div class="sec-label reveal">Today's Session</div>
-      <h2 class="sec-h2 reveal">How this goes</h2>
+      <div class="sec-label reveal">Today's agenda</div>
+      <h2 class="sec-h2 reveal">What we're covering.</h2>
       <div class="agenda-list">
         <div class="agenda-item reveal">
           <span class="agenda-num">01</span>
-          <div class="agenda-content">
-            <strong>Brief recap</strong>
-            <p>A quick alignment check — what we heard, what we're solving for, and who we're talking to. Correct us if anything's off.</p>
+          <div class="agenda-text">
+            <strong>Context &amp; Scope</strong>
+            <p>Quick alignment on what Phase 1 covers and what follows.</p>
           </div>
         </div>
         <div class="agenda-item reveal">
           <span class="agenda-num">02</span>
-          <div class="agenda-content">
-            <strong>Three directions</strong>
-            <p>We walk you through each concept — the idea behind it, the feeling it's going after, and how it shows up visually.</p>
+          <div class="agenda-text">
+            <strong>Logo Concepts</strong>
+            <p>Three directions — each with a distinct visual posture. We'll walk through the thinking behind each one.</p>
           </div>
         </div>
         <div class="agenda-item reveal">
           <span class="agenda-num">03</span>
-          <div class="agenda-content">
-            <strong>Your reaction</strong>
-            <p>No filter. Tell us what lands, what doesn't, what excites you, and what feels wrong. All of it is useful.</p>
+          <div class="agenda-text">
+            <strong>Your Reaction</strong>
+            <p>This is the most important part. What's landing? What's not? What do you want pushed further?</p>
           </div>
         </div>
         <div class="agenda-item reveal">
           <span class="agenda-num">04</span>
-          <div class="agenda-content">
-            <strong>Direction + next move</strong>
-            <p>We land on a path forward together — whether that's selecting a direction, blending elements, or refining further.</p>
+          <div class="agenda-text">
+            <strong>Next Steps</strong>
+            <p>Where we go from here — revision path, timeline, and what we need from you to keep moving.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONCEPTS -->
-  <section class="sec" id="concepts" style="background: var(--bg);">
+  <!-- LOGO CONCEPTS -->
+  <section class="sec" id="concepts" style="background: var(--bg-3);">
     <div class="sec-inner">
       <div class="sec-bar reveal"></div>
-      <div class="sec-label reveal">Brand Directions</div>
-      <h2 class="sec-h2 reveal">Three concepts</h2>
-      <p class="sec-intro reveal">Each direction starts from a different truth about S·K·I·N· Method. Different feeling, different audience signal, same foundation: skin care that respects the person wearing it.</p>
+      <div class="sec-label reveal">Logo concepts</div>
+      <h2 class="sec-h2 reveal">Three directions.</h2>
+      <p class="sec-body reveal">Each concept starts from the same brief but takes a different stance on how S·K·I·N· Method shows up. They're not equally weighted — one will feel more right than the others. Trust that.</p>
       <div class="concept-grid">
-
         <div class="concept-card reveal">
-          <div class="concept-img-placeholder">
-            <span class="placeholder-label">[CONTENT: Concept A visual]</span>
+          <div class="concept-img">
+            <div class="concept-img-placeholder">[Concept A<br>image]</div>
           </div>
           <div class="concept-body">
-            <div class="concept-name">[CONTENT: Concept A Name]</div>
-            <p class="concept-desc">[CONTENT: 2–3 sentences describing the emotional territory, visual language, and who this direction speaks to.]</p>
-            <span class="concept-tag">Direction A</span>
+            <div class="concept-num">Concept A</div>
+            <h3>[Concept Name]</h3>
+            <p>[CONTENT: 2–3 sentences on the direction, the feeling, and the decision behind this mark.]</p>
           </div>
         </div>
-
         <div class="concept-card reveal">
-          <div class="concept-img-placeholder">
-            <span class="placeholder-label">[CONTENT: Concept B visual]</span>
+          <div class="concept-img">
+            <div class="concept-img-placeholder">[Concept B<br>image]</div>
           </div>
           <div class="concept-body">
-            <div class="concept-name">[CONTENT: Concept B Name]</div>
-            <p class="concept-desc">[CONTENT: 2–3 sentences describing the emotional territory, visual language, and who this direction speaks to.]</p>
-            <span class="concept-tag">Direction B</span>
+            <div class="concept-num">Concept B</div>
+            <h3>[Concept Name]</h3>
+            <p>[CONTENT: 2–3 sentences on the direction, the feeling, and the decision behind this mark.]</p>
           </div>
         </div>
-
         <div class="concept-card reveal">
-          <div class="concept-img-placeholder">
-            <span class="placeholder-label">[CONTENT: Concept C visual]</span>
+          <div class="concept-img">
+            <div class="concept-img-placeholder">[Concept C<br>image]</div>
           </div>
           <div class="concept-body">
-            <div class="concept-name">[CONTENT: Concept C Name]</div>
-            <p class="concept-desc">[CONTENT: 2–3 sentences describing the emotional territory, visual language, and who this direction speaks to.]</p>
-            <span class="concept-tag">Direction C</span>
+            <div class="concept-num">Concept C</div>
+            <h3>[Concept Name]</h3>
+            <p>[CONTENT: 2–3 sentences on the direction, the feeling, and the decision behind this mark.]</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- PROCESS / TIMELINE -->
+  <!-- PHASE OVERVIEW -->
   <section class="sec" id="process" style="background: var(--bg-2);">
     <div class="sec-inner">
       <div class="sec-bar reveal"></div>
-      <div class="sec-label reveal">Where We Are</div>
-      <h2 class="sec-h2 reveal">Phase 1 timeline</h2>
-      <p class="sec-intro reveal">We're moving deliberately. Each milestone has a clear deliverable and a clear handoff. You're never waiting and wondering.</p>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="timeline-date">Jun 26</div>
-          <div class="timeline-content">
-            <strong>Presentation 01 — Concept review</strong>
-            <p>Today. Three logo directions presented. Feedback collected. Direction selected or refinements identified.</p>
+      <div class="sec-label reveal">Project phases</div>
+      <h2 class="sec-h2 reveal">How this unfolds.</h2>
+      <p class="sec-body reveal">Phase 1 is the foundation. Everything else builds on what we decide here.</p>
+      <div class="process-list">
+        <div class="process-item reveal">
+          <span class="process-step">1</span>
+          <div class="process-content">
+            <strong>Phase 1 — Brand Foundation (Active)</strong>
+            <p>Logo suite, brand system, business cards, bag stamp/sticker, POS receipt logo.</p>
           </div>
         </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-date">Jul 8</div>
-          <div class="timeline-content">
-            <strong>Presentation 02 — Refined direction</strong>
-            <p>One direction developed further based on today's feedback. Logo suite, color system, and type treatment shown in context.</p>
+        <div class="process-item reveal">
+          <span class="process-step">2</span>
+          <div class="process-content">
+            <strong>Phase 2 — Digital Presence</strong>
+            <p>Website, social templates, digital brand guidelines. Scoped separately — kicks off once Phase 1 is locked.</p>
           </div>
         </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-date">TBD</div>
-          <div class="timeline-content">
-            <strong>Phase 1 deliverables</strong>
-            <p>Final logo suite, brand system, business cards, bag stamp/sticker, and POS receipt logo — all production-ready files handed off.</p>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="timeline-date">Phase 2</div>
-          <div class="timeline-content">
-            <strong>Digital presence</strong>
-            <p>Scope defined separately. Website, booking flow, and digital brand rollout — when you're ready.</p>
+        <div class="process-item reveal">
+          <span class="process-step">3</span>
+          <div class="process-content">
+            <strong>Phase 3 — Launch Materials</strong>
+            <p>Launch campaign, printed collateral, everything you need to go public with confidence. Scoped separately.</p>
           </div>
         </div>
       </div>
@@ -602,44 +574,39 @@
   </section>
 
   <!-- NEXT STEPS -->
-  <section class="sec" id="next-steps" style="background: var(--bg-3);">
+  <section class="sec" id="next" style="background: var(--bg);">
     <div class="sec-inner">
       <div class="sec-bar reveal"></div>
-      <div class="sec-label reveal">After Today</div>
-      <h2 class="sec-h2 reveal">Next steps</h2>
+      <div class="sec-label reveal">Next steps</div>
+      <h2 class="sec-h2 reveal">Where we go from here.</h2>
       <table class="steps-table reveal">
         <thead>
           <tr>
-            <th>Action</th>
-            <th>Owner</th>
-            <th>Timeline</th>
+            <th style="width:50%">Action</th>
+            <th style="width:20%">Owner</th>
+            <th style="width:30%">Timeline</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>→ Share feedback on all three directions — gut reactions + specifics</td>
-            <td><span class="owner-pill owner-skin">S·K·I·N·</span></td>
-            <td>By Jun 27</td>
-          </tr>
-          <tr>
-            <td>→ Consolidate feedback and confirm direction for development</td>
-            <td><span class="owner-pill owner-both">Both</span></td>
-            <td>Jun 27–28</td>
-          </tr>
-          <tr>
-            <td>→ Develop selected direction into full logo suite + color + type system</td>
-            <td><span class="owner-pill owner-bs">Big Sis</span></td>
+            <td>→ Share feedback on concepts — gut reactions, what's working, what's not</td>
+            <td><span class="owner-tag owner-skin">S·K·I·N·</span></td>
             <td>By Jul 8</td>
           </tr>
           <tr>
-            <td>→ Presentation 02 — refined direction review</td>
-            <td><span class="owner-pill owner-both">Both</span></td>
-            <td>Jul 8</td>
+            <td>→ Revise and refine selected direction (logo suite + colorway)</td>
+            <td><span class="owner-tag owner-bs">Big Sis</span></td>
+            <td>Following feedback</td>
           </tr>
           <tr>
-            <td>→ Phase 1 deliverables production and final file handoff</td>
-            <td><span class="owner-pill owner-bs">Big Sis</span></td>
-            <td>TBD</td>
+            <td>→ Deliver final logo suite + brand system files</td>
+            <td><span class="owner-tag owner-bs">Big Sis</span></td>
+            <td>TBD after revisions</td>
+          </tr>
+          <tr>
+            <td>→ Begin Phase 2 scoping conversation</td>
+            <td><span class="owner-tag owner-both">Both</span></td>
+            <td>After Phase 1 approval</td>
           </tr>
         </tbody>
       </table>
@@ -649,7 +616,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-wordmark">Big <span>Sis</span></div>
+      <div class="footer-wordmark">Big <span>Sis</span> Creative Studio</div>
       <div class="footer-right">
         <span class="footer-chip">Confidential</span>
         <span class="footer-credit">Big Sis Creative Studio × S·K·I·N· Method · 2026</span>
@@ -658,14 +625,9 @@
   </footer>
 
   <script>
-    // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.08 });
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 
