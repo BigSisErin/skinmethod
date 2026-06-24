@@ -126,7 +126,7 @@
     .agenda-list { display: flex; flex-direction: column; }
     .agenda-item { display: flex; align-items: flex-start; gap: 32px; padding: 32px 0; border-bottom: 1px solid var(--rule); }
     .agenda-item:last-child { border-bottom: none; }
-    .agenda-num { font-family: var(--ff-display); font-weight: 400; font-size: 72px; color: var(--text-dim); line-height: 1; min-width: 80px; }
+    .agenda-num { font-family: var(--ff-display); font-weight: 400; font-size: 72px; color: var(--text-dim); line-height: 1; min-width: 110px; flex-shrink: 0; }
     .agenda-text { padding-top: 10px; }
     .agenda-text strong { display: block; font-family: var(--ff-body); font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
     .agenda-text p { font-family: var(--ff-body); font-size: 15px; color: var(--text-mid); line-height: 1.6; }
@@ -180,6 +180,15 @@
       font-family: var(--ff-body); font-size: 14px; line-height: 1.65;
       color: var(--text-mid); max-width: 720px;
     }
+    .note-list {
+      margin-top: 14px; list-style: none; max-width: 720px;
+    }
+    .note-list li {
+      font-family: var(--ff-body); font-size: 14px; line-height: 1.65;
+      color: var(--text-mid); margin-bottom: 10px;
+      padding-left: 20px; text-indent: -20px;
+    }
+    .note-list li:last-child { margin-bottom: 0; }
 
     /* ── PROCESS ── */
     .process-list { display: flex; flex-direction: column; }
@@ -337,14 +346,16 @@
     <div class="sec-inner">
       <div class="sec-bar reveal"></div>
       <div class="sec-label reveal">Logo concepts</div>
-      <h2 class="sec-h2 reveal" style="margin-bottom: 64px;">Three directions.</h2>
+      <h2 class="sec-h2 reveal" style="margin-bottom: 20px;">Three directions.</h2>
+      <p class="concept-intro reveal" style="margin-bottom: 18px;">For each direction you'll see the logo on its own, the logo in context, variations on the mark (horizontal and stacked lockups, social profile, and more), and where the color and type could go.</p>
+      <p class="concept-intro reveal" style="margin-bottom: 64px;">One thing to keep in mind: these look finished, but they're very much not. Nothing here is final or ready for print. Think of them as polished concepts to react to, not decisions that are set in stone.</p>
 
       <!-- CONCEPT 1 -->
       <div class="concept-block reveal">
         <div class="concept-header">
           <div class="concept-num-label">Concept 1</div>
-          <h3 class="concept-title">[Concept Name]</h3>
-          <p class="concept-intro">[CONTENT: 2–3 sentences on what this direction leans into — the visual stance, the brand character it's projecting, and why it's a strong fit for S·K·I·N· Method.]</p>
+          <h3 class="concept-title">Crafted Intention</h3>
+          <p class="concept-intro">This direction is about precision you can feel. Every letter is placed with care and works together as a single, considered unit. It mirrors how S·K·I·N· works: nothing arbitrary, nothing rushed, every decision made on purpose.</p>
         </div>
 
         <div class="img-pair">
@@ -352,7 +363,11 @@
           <div class="img-placeholder ratio-17-11">
             <img src="SM_01_Concept1_logo.jpg" alt="Concept 1 — Logo">
           </div>
-          <p class="img-notes">[Notes on the mark — what's intentional, what's doing work, what to look at.]</p>
+          <ul class="note-list">
+            <li>→ The wordmark is built as one unit. The spacing, the interpunct dots, and the way SKIN and METHOD lock together are all deliberate. It reads as composed, not assembled.</li>
+            <li>→ Restraint is the point. Even rhythm and clean forms signal control and care without having to announce it.</li>
+            <li>→ A soft curve lives inside the letterforms for a touch of warmth, but the foundation is craft and unity.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
@@ -360,7 +375,9 @@
           <div class="img-placeholder ratio-17-11">
             <img src="SM_01_Concept1_application.jpg" alt="Concept 1 — Logo in context">
           </div>
-          <p class="img-notes">[Notes on how it lives in the real world — materials, environment, application.]</p>
+          <ul class="note-list">
+            <li>→ Across a calm, editorial layout, the identity keeps its composure. The four values get room to breathe, which reflects the unhurried, considered way the work gets done.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
@@ -368,7 +385,9 @@
           <div class="img-placeholder ratio-17-11">
             <img src="SM_01_Concept1_exploration.jpg" alt="Concept 1 — Alternate versions and explorations">
           </div>
-          <p class="img-notes">[Notes on variations — horizontal lockup, scale behavior, any alternate mark directions.]</p>
+          <ul class="note-list">
+            <li>→ Stacked, horizontal, wordmark-only, and a circular badge. Each holds the same careful balance, so the identity stays intact on a sign, a screen, or a stamp.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
@@ -376,7 +395,10 @@
           <div class="img-placeholder ratio-5-2">
             <img src="SM_01_Concept1_colorstype.jpg" alt="Concept 1 — Color and type system">
           </div>
-          <p class="img-notes">[Notes on the palette and type pairing — what it's referencing, what mood it creates, why it works with this mark.]</p>
+          <ul class="note-list">
+            <li>→ The palette references a range drawn from the Fitzpatrick spectrum, the scale used to describe skin tone. It pulls from across that range rather than settling on a single tone, because S·K·I·N· serves everyone.</li>
+            <li>→ A modern serif headline paired with a clean sans for body gives the system warmth and credibility at once.</li>
+          </ul>
         </div>
       </div>
 
@@ -384,8 +406,8 @@
       <div class="concept-block reveal">
         <div class="concept-header">
           <div class="concept-num-label">Concept 2</div>
-          <h3 class="concept-title">[Concept Name]</h3>
-          <p class="concept-intro">[CONTENT: 2–3 sentences on what this direction leans into — the visual stance, the brand character it's projecting, and why it's a strong fit for S·K·I·N· Method.]</p>
+          <h3 class="concept-title">The Protocol</h3>
+          <p class="concept-intro">This direction is science-forward and clinical, on purpose. It treats the brand the way S·K·I·N· treats skin: close attention, real evidence, a clear method. It looks like expertise, because it is.</p>
         </div>
 
         <div class="img-pair">
@@ -393,7 +415,11 @@
           <div class="img-placeholder ratio-17-11">
             <img src="SM_01_Concept2_logo.jpg" alt="Concept 2 — Logo">
           </div>
-          <p class="img-notes">[Notes on the mark.]</p>
+          <ul class="note-list">
+            <li>→ The dotted S.K.I.N reads like clinical notation. Precise, deliberate, methodical.</li>
+            <li>→ The "+" and crop marks work on a few levels at once: a target for focus and precision, a zoom-in on the detail that matters, and a nod to the reference and citation marks used to source information. Together they say this is a brand that looks closely and shows its work.</li>
+            <li>→ The "+" also stands on its own as a mark, so the identity holds at any size.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
@@ -401,7 +427,9 @@
           <div class="img-placeholder ratio-17-11">
             <img src="SM_01_Concept2_application.jpg" alt="Concept 2 — Logo in context">
           </div>
-          <p class="img-notes">[Notes on application.]</p>
+          <ul class="note-list">
+            <li>→ The application maps points of focus directly onto the skin, like an analysis in progress. It reads as a method you can see, not a claim you have to take on faith.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
@@ -409,7 +437,9 @@
           <div class="img-placeholder ratio-17-11">
             <img src="SM_01_Concept2_exploration.jpg" alt="Concept 2 — Alternate versions and explorations">
           </div>
-          <p class="img-notes">[Notes on variations.]</p>
+          <ul class="note-list">
+            <li>→ Stacked, horizontal, centered, and a badge. The "+" carries the brand even where the full wordmark can't go.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
@@ -417,7 +447,10 @@
           <div class="img-placeholder ratio-5-2">
             <img src="SM_01_Concept2_colorstype.jpg" alt="Concept 2 — Color and type system">
           </div>
-          <p class="img-notes">[Notes on palette and type pairing.]</p>
+          <ul class="note-list">
+            <li>→ This palette steps away from literal skin tones and leans cooler, on purpose. Going cooler keeps the brand skin color agnostic, so the system stays open to everyone S·K·I·N· serves rather than tied to any one tone. Palette is still in exploration.</li>
+            <li>→ A modern sans headline over a serif body reads like a clinical journal: structured, precise, easy to trust.</li>
+          </ul>
         </div>
       </div>
 
@@ -425,8 +458,8 @@
       <div class="concept-block reveal">
         <div class="concept-header">
           <div class="concept-num-label">Concept 3</div>
-          <h3 class="concept-title">[Concept Name]</h3>
-          <p class="concept-intro">[CONTENT: 2–3 sentences on what this direction leans into — the visual stance, the brand character it's projecting, and why it's a strong fit for S·K·I·N· Method.]</p>
+          <h3 class="concept-title">Earned Confidence</h3>
+          <p class="concept-intro">This direction stands proud, because S·K·I·N· has earned it. Years of experience, real results, and a methodology Rebecca and Genevieve stand behind completely. The identity carries that same self-assurance: it takes up space and doesn't apologize for it.</p>
         </div>
 
         <div class="img-pair">
@@ -434,15 +467,20 @@
           <div class="img-placeholder ratio-17-11">
             <img src="SM_01_Concept3_logo.jpg" alt="Concept 3 — Logo">
           </div>
-          <p class="img-notes">[Notes on the mark.]</p>
+          <ul class="note-list">
+            <li>→ SKIN is set in a bold serif, and it's the one serif in the lockup, so it stands on its own and commands the eye.</li>
+            <li>→ METHOD anchors it in a clean, grounded sans, so the whole thing reads assured rather than ornamental.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
           <div class="img-pair-label">Logo in context</div>
           <div class="img-placeholder ratio-17-11">
-            <img src="SM_01_Concept3_application.jpg" alt="Concept 3 — Logo in context">
+            <img src="SM_01_Concept3_application_v2.jpg" alt="Concept 3 — Logo in context">
           </div>
-          <p class="img-notes">[Notes on application.]</p>
+          <ul class="note-list">
+            <li>→ The wordmark goes large and full-bleed, set right against the work itself. It's a statement: this is who we are, look closely.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
@@ -450,7 +488,9 @@
           <div class="img-placeholder ratio-17-11">
             <img src="SM_01_Concept3_exploration.jpg" alt="Concept 3 — Alternate versions and explorations">
           </div>
-          <p class="img-notes">[Notes on variations.]</p>
+          <ul class="note-list">
+            <li>→ Light and dark badges plus a compressed lockup. The identity keeps its presence whether it's large and loud or small and quiet.</li>
+          </ul>
         </div>
 
         <div class="img-pair">
@@ -458,7 +498,10 @@
           <div class="img-placeholder ratio-5-2">
             <img src="SM_01_Concept3_colorstype.jpg" alt="Concept 3 — Color and type system">
           </div>
-          <p class="img-notes">[Notes on palette and type pairing.]</p>
+          <ul class="note-list">
+            <li>→ The palette shows the full Fitzpatrick spectrum, every tone, not a sample. That's deliberate: S·K·I·N· serves every skin, and the system represents all of it rather than defaulting to one.</li>
+            <li>→ There's intentional tension between the wide, weighted letters of the wordmark and the condensed headline type around it. That contrast is where the confidence and edge come from.</li>
+          </ul>
         </div>
       </div>
 
