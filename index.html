@@ -36,7 +36,7 @@
 
     html { scroll-behavior: smooth; }
     body { font-family: var(--ff-body); background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
-    h1, h2, h3, h4, h5, h6 { font-weight: 500; }
+    h1, h2, h3, h4, h5, h6 { font-weight: 500; text-transform: uppercase; }
 
     /* ── NAV ── */
     nav {
@@ -59,26 +59,19 @@
     /* ── HERO ── */
     .hero {
       background: var(--bg);
-      padding: 96px 40px 0;
-      display: flex; flex-direction: column; align-items: center; text-align: center;
+      padding: 96px 0 0;
+      display: flex; flex-direction: column; align-items: center;
     }
-    .hero-text { max-width: 720px; margin: 0 auto 40px; }
+    .hero-text { width: 100%; max-width: 960px; margin: 0 auto 40px; padding: 0 40px; text-align: left; box-sizing: border-box; }
     .hero-label {
       color: var(--accent);
       font-family: var(--ff-body); font-size: 12px;
       letter-spacing: .16em; text-transform: uppercase; font-weight: 700;
       margin-bottom: 16px;
     }
-    .hero-status {
-      display: inline-flex; gap: 10px; align-items: center;
-      background: var(--bg-2); border: 1px solid var(--rule);
-      padding: 8px 18px; border-radius: 2px; margin-bottom: 24px;
-      font-family: var(--ff-body); font-size: 13px; color: var(--text);
-    }
-    .hero-status strong { font-weight: 700; }
     .hero-meta {
       color: var(--text-mid); font-family: var(--ff-body);
-      font-size: 14px; letter-spacing: .01em; max-width: 620px; line-height: 1.7; margin: 0 auto;
+      font-size: 14px; letter-spacing: .01em; max-width: 620px; line-height: 1.7;
     }
     .hero-meta a { color: var(--text); font-weight: 600; }
     .hero-lockup-wrap { width: 100%; max-width: 1600px; margin: 0 auto; }
@@ -159,6 +152,7 @@
       width: 110px; height: 110px; border-radius: 50%; overflow: hidden;
       display: flex; align-items: center; justify-content: center;
       border: 1px solid var(--rule);
+      box-shadow: 0 6px 16px rgba(59,35,32,0.28);
     }
     .social-circle img { width: 100%; height: 100%; object-fit: cover; }
     .social-caption { font-family: var(--ff-body); font-size: 12px; font-weight: 600; color: var(--text-mid); text-align: center; }
@@ -187,13 +181,6 @@
     .color-swatch-info .pms-row span:last-child { font-weight: 700; color: var(--text); }
 
     /* ── TYPE ── */
-    .type-print { margin-top: 40px; }
-    .type-print img { max-width: 100%; height: auto; border-radius: 2px; border: 1px solid var(--rule); }
-    .type-print-caption { margin-top: 10px; font-family: var(--ff-body); font-size: 12px; color: var(--text-dim); }
-    .type-web-label {
-      margin-top: 48px; font-family: var(--ff-body); font-size: 12px; font-weight: 700;
-      letter-spacing: .1em; text-transform: uppercase; color: var(--text-dim);
-    }
     .type-block { margin-top: 16px; display: flex; flex-direction: column; gap: 24px; }
     .type-row {
       background: var(--bg-2); border-radius: 2px; padding: 28px 32px;
@@ -314,7 +301,7 @@
       width: 100%; background: var(--bg-4); border: none; padding: 24px 40px; cursor: pointer;
       display: flex; justify-content: space-between; align-items: center;
       font-family: var(--ff-display); font-weight: 600; font-size: 20px; color: var(--text);
-      text-align: left;
+      text-align: left; text-transform: uppercase;
     }
     .archive-btn-title { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
     .archive-btn-meta { font-family: var(--ff-body); font-size: 12px; font-weight: 500; color: var(--text-mid); text-transform: none; letter-spacing: 0; display: block; margin-top: 6px; text-align: left; }
@@ -348,7 +335,8 @@
     }
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
-      .hero  { padding: 72px 20px 0; }
+      .hero  { padding: 72px 0 0; }
+      .hero-text { padding: 0 20px; }
       .sec  { padding: 60px 20px; }
       .yn-grid { grid-template-columns: 1fr; }
       .logo-sample-grid { grid-template-columns: 1fr; }
@@ -381,7 +369,6 @@
   <section class="hero" id="top">
     <div class="hero-text">
       <div class="hero-label">Brand Identity Hub</div>
-      <div class="hero-status"><strong>Status</strong> — Phase 1 locked: Earned Confidence</div>
       <p class="hero-meta">Everything you need to keep S·K·I·N· Method's brand consistent is here: logo files to download, usage rules to follow, the color system, and the type system. Not sure if you're doing it right? Reach out to Big Sis at <a href="mailto:erin@bigsiscreativestudio.com">erin@bigsiscreativestudio.com</a>.</p>
     </div>
     <div class="hero-lockup-wrap">
@@ -419,6 +406,8 @@
           <a class="dl-link" href="https://drive.google.com/drive/folders/149LzhxAF9fLaerTadAdKfLpBn9ObwkO_?usp=sharing" target="_blank" rel="noopener">Go to downloads ↗</a>
         </div>
       </div>
+
+      <p class="rules-note reveal"><strong>Not sure which file to grab?</strong> Reach for a PNG first — it's what you'll need close to 90% of the time. Each folder has two sizes: the small one for anything on a screen (email signatures, social posts, docs), and the one labeled "@4x" for anything bigger or higher-resolution, like large print or signage. You'll also see PDF, SVG, and EPS files sitting in each folder. You don't need to know exactly what sets them apart — they're just there in case a printer or vendor ever asks for a specific one by name.</p>
     </div>
   </section>
 
@@ -427,8 +416,8 @@
     <div class="sec-inner">
       <div class="sec-bar reveal"></div>
       <div class="sec-label reveal">Logo System</div>
-      <h2 class="sec-h2 reveal">Earned Confidence.</h2>
-      <p class="sec-body reveal">SKIN sits in a bold serif, the one serif in the lockup, so it stands on its own and commands the eye. METHOD anchors it in a clean, grounded sans — the whole thing reads assured rather than ornamental. Every combination below is checked for real contrast, not just approved on paper.</p>
+      <h2 class="sec-h2 reveal">Logo: Earned Confidence</h2>
+      <p class="sec-body reveal">SKIN sits in a bold serif, the one serif in the lockup, so it stands on its own and commands the eye. METHOD anchors it in a clean, grounded sans — the whole thing reads assured rather than ornamental.</p>
 
       <div class="logo-group reveal">
         <div class="logo-group-title">Primary — no tagline</div>
@@ -490,8 +479,20 @@
       <div class="sec-bar reveal"></div>
       <div class="sec-label reveal">Social</div>
       <h2 class="sec-h2 reveal">Profile images.</h2>
-      <p class="sec-body reveal">Pre-cropped to a 110×110px circle so the mark holds up as a small avatar on any platform. Three tonal options — light, medium, dark — pick whichever holds its contrast best against the platform's own chrome.</p>
-      <p class="sec-body reveal" style="margin-top: -16px; font-style: italic;">The three crops are queued up in the Social logos download above — I hit a snag pulling the exact circle-cropped files into this page directly this round. If you want them live on the page (not just linked), drop the three PNGs back into our chat and I'll drop them straight in.</p>
+      <div class="social-grid reveal">
+        <div class="social-item">
+          <div class="social-circle"><img src="SKIN_Method_social_light.png" alt="S.K.I.N. Method social profile image, light"></div>
+          <div class="social-caption">Light</div>
+        </div>
+        <div class="social-item">
+          <div class="social-circle"><img src="SKIN_Method_social_med.png" alt="S.K.I.N. Method social profile image, medium"></div>
+          <div class="social-caption">Medium</div>
+        </div>
+        <div class="social-item">
+          <div class="social-circle"><img src="SKIN_Method_social_dark.png" alt="S.K.I.N. Method social profile image, dark"></div>
+          <div class="social-caption">Dark</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -575,28 +576,22 @@
     <div class="sec-inner">
       <div class="sec-bar reveal"></div>
       <div class="sec-label reveal">Type</div>
-      <h2 class="sec-h2 reveal">Structured, precise, easy to trust.</h2>
+      <h2 class="sec-h2 reveal">A type system that's structured &amp; precise.</h2>
       <p class="sec-body reveal">A condensed display headline gives the system some edge; a clean, quiet body font keeps everything else easy to read.</p>
 
-      <div class="type-print reveal">
-        <img src="SM_font_screenshot.png" alt="Print font specimen: Obviously Condensed Medium for headlines, DM Sans for body and captions">
-        <div class="type-print-caption">Print / brand fonts, shown as specified — Obviously Condensed Medium is a paid font and can't render live on the web.</div>
-      </div>
-
-      <div class="type-web-label reveal">Web fonts (live on this page)</div>
-      <div class="type-block reveal">
+      <div class="type-block reveal" style="margin-top: 40px;">
         <div class="type-row">
-          <div class="type-role">Headlines<span>Web substitute</span></div>
+          <div class="type-role">Headlines</div>
           <div>
-            <div class="type-specimen-headline">S·K·I·N· Method</div>
-            <div class="type-google-note">Web substitute: <a href="https://fonts.google.com/specimen/Barlow+Condensed" target="_blank" rel="noopener">Barlow Condensed</a> — free on Google Fonts, used for every headline on this microsite.</div>
+            <div class="type-specimen-headline">Headlines in Barlow Condensed</div>
+            <div class="type-google-note"><a href="https://fonts.google.com/specimen/Barlow+Condensed" target="_blank" rel="noopener">Barlow Condensed</a> — free on Google Fonts, used for every headline on this microsite.</div>
           </div>
         </div>
         <div class="type-row">
           <div class="type-role">Body<span>DM Sans</span></div>
           <div>
             <div class="type-specimen-body">Body copy set in DM Sans. Clean, warm, and easy to read at any size.</div>
-            <div class="type-google-note">Already free on <a href="https://fonts.google.com/specimen/DM+Sans" target="_blank" rel="noopener">Google Fonts</a> — same font for print and web, no substitution needed. Used for all body copy on this microsite.</div>
+            <div class="type-google-note">Free on <a href="https://fonts.google.com/specimen/DM+Sans" target="_blank" rel="noopener">Google Fonts</a>. Used for all body copy on this microsite.</div>
           </div>
         </div>
         <div class="type-row">
