@@ -74,6 +74,10 @@
       font-size: 14px; letter-spacing: .01em; max-width: 620px; line-height: 1.7;
     }
     .hero-meta a { color: var(--text); font-weight: 600; }
+    .hero-updated {
+      font-family: var(--ff-body); font-size: 12px; font-weight: 600;
+      letter-spacing: .1em; text-transform: uppercase; color: var(--text-dim);
+    }
     .hero-lockup-wrap { width: 100%; max-width: 1600px; margin: 0 auto; }
     .hero-lockup { width: 100%; height: auto; display: block; }
 
@@ -331,6 +335,8 @@
       text-transform: uppercase; font-weight: 700; padding: 4px 12px; margin-bottom: 8px;
     }
     .footer-credit { display: block; color: rgba(244,242,234,0.6); font-family: 'Epilogue', sans-serif; font-size: 12px; }
+    .footer-contact { display: block; color: rgba(244,242,234,0.75); font-family: 'Epilogue', sans-serif; font-size: 12px; margin-top: 8px; max-width: 320px; }
+    .footer-contact a { color: #FFFFFF; font-weight: 600; }
 
     /* ── REVEAL ── */
     .reveal { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
@@ -368,18 +374,18 @@
     <div class="nav-links">
       <a href="#downloads">Downloads</a>
       <a href="#logo">Logo</a>
-      <a href="#tagline">Tagline</a>
       <a href="#social">Social</a>
+      <a href="#tagline">Tagline</a>
       <a href="#color">Color</a>
       <a href="#type">Type</a>
     </div>
   </nav>
 
   <!-- HERO -->
+  <!-- Remember: bump the date below every time this page is edited/deployed -->
   <section class="hero" id="top">
     <div class="hero-text">
-      <div class="hero-label">Brand Identity Hub</div>
-      <p class="hero-meta">Everything you need to keep S·K·I·N· Method's brand consistent is here: logo files to download, usage rules to follow, the color system, and the type system. Not sure if you're doing it right? Reach out to Big Sis at <a href="mailto:erin@bigsiscreativestudio.com">erin@bigsiscreativestudio.com</a>.</p>
+      <div class="hero-updated">Updated 07.30.26</div>
     </div>
     <div class="hero-lockup-wrap">
       <img class="hero-lockup" src="SM_hero_lockup.webp" alt="S.K.I.N. Method">
@@ -490,33 +496,6 @@
     </div>
   </section>
 
-  <!-- TAGLINE -->
-  <section class="sec" id="tagline" style="background: var(--bg);">
-    <div class="sec-inner">
-      <div class="sec-bar reveal"></div>
-      <div class="sec-label reveal">Tagline</div>
-      <h2 class="sec-h2 reveal">Standalone tagline.</h2>
-      <p class="sec-body reveal">Sometimes the tagline needs to stand on its own — a sign-off, a footer, a spot where the full logo lockup would be too much. Two orientations cover most needs: one line for wide spaces, stacked for anywhere narrower.</p>
-
-      <div class="logo-group reveal">
-        <div class="logo-group-title">One line</div>
-        <div class="tagline-row" style="background:#3B2320;">
-          <img src="SM_tagline_oneline_1.svg" alt="S.K.I.N. Method tagline, one line, Type 1 on dark">
-        </div>
-        <div class="tagline-row" style="background:#FFFFFF; border:1px solid rgba(59,35,32,0.12);">
-          <img src="SM_tagline_oneline_4.svg" alt="S.K.I.N. Method tagline, one line, Type 4 on white">
-        </div>
-      </div>
-
-      <div class="logo-group reveal">
-        <div class="logo-group-title">Stacked, left-justified</div>
-        <div class="tagline-row stacked" style="background:#FFFFFF; border:1px solid rgba(59,35,32,0.12);">
-          <img src="SM_tagline_stackedleft_6.svg" alt="S.K.I.N. Method tagline, stacked left-justified, Type 6 on white">
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- SOCIAL -->
   <section class="sec" id="social" style="background: var(--bg-3);">
     <div class="sec-inner">
@@ -535,6 +514,44 @@
         <div class="social-item">
           <div class="social-circle" style="background:#3B2320;"><img src="SKIN_Method_social_dark.png" alt="S.K.I.N. Method social profile image, dark"></div>
           <div class="social-caption">Dark</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGLINE -->
+  <section class="sec" id="tagline" style="background: var(--bg);">
+    <div class="sec-inner">
+      <div class="sec-bar reveal"></div>
+      <div class="sec-label reveal">Tagline</div>
+      <h2 class="sec-h2 reveal">Standalone tagline</h2>
+      <p class="sec-body reveal">Sometimes the tagline needs to stand on its own — a sign-off, a footer, a spot where the full logo lockup would be too much. Two orientations cover most needs: one line for wide spaces, stacked for anywhere narrower. Every color in the system, both orientations.</p>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">One line</div>
+        <div class="tagline-row" style="background:#3B2320;">
+          <img src="SM_tagline_oneline_1.svg" alt="S.K.I.N. Method tagline, one line, Type 1 on dark">
+        </div>
+        <div class="tagline-row" style="background:#FFFFFF; border:1px solid rgba(59,35,32,0.12);">
+          <img src="SM_tagline_oneline_4.svg" alt="S.K.I.N. Method tagline, one line, Type 4 on white">
+        </div>
+        <div class="tagline-row" style="background:#FFFFFF; border:1px solid rgba(59,35,32,0.12);">
+          <img src="SM_tagline_oneline_6.svg" alt="S.K.I.N. Method tagline, one line, Type 6 on white">
+        </div>
+      </div>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">Stacked, left-justified</div>
+        <div class="logo-sample-grid">
+          <div class="tagline-row stacked" style="background:#3B2320;">
+            <img src="SM_tagline_stackedleft_1.svg" alt="S.K.I.N. Method tagline, stacked left-justified, Type 1 on dark">
+          </div>
+          <div class="tagline-row stacked" style="background:#FFFFFF; border:1px solid rgba(59,35,32,0.12);">
+            <img src="SM_tagline_stackedleft_4.svg" alt="S.K.I.N. Method tagline, stacked left-justified, Type 4 on white">
+          </div>
+          <div class="tagline-row stacked" style="background:#FFFFFF; border:1px solid rgba(59,35,32,0.12);">
+            <img src="SM_tagline_stackedleft_6.svg" alt="S.K.I.N. Method tagline, stacked left-justified, Type 6 on white">
+          </div>
         </div>
       </div>
     </div>
@@ -994,6 +1011,7 @@
       <div class="footer-right">
         <span class="footer-chip">Confidential</span>
         <span class="footer-credit">Big Sis Creative Studio × S·K·I·N· Method · 2026</span>
+        <span class="footer-contact">Not sure if you're doing it right? Reach out to Big Sis at <a href="mailto:erin@bigsiscreativestudio.com">erin@bigsiscreativestudio.com</a>.</span>
       </div>
     </div>
   </footer>
