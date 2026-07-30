@@ -97,7 +97,7 @@
     .sec-body a { color: var(--text); font-weight: 700; }
 
     /* ── DOWNLOADS GRID ── */
-    .dl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
+    .dl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
     .dl-card {
       background: var(--bg-2); padding: 28px 24px; border-radius: 2px;
       display: flex; flex-direction: column; gap: 14px; min-height: 180px;
@@ -144,6 +144,15 @@
       color: var(--text-mid); max-width: 720px; border-radius: 2px;
     }
     .rules-note strong { color: var(--text); }
+
+    /* ── TAGLINE ── */
+    .tagline-row {
+      width: 100%; border-radius: 2px; padding: 44px 32px;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 20px;
+    }
+    .tagline-row img { width: 100%; max-width: 640px; height: auto; display: block; }
+    .tagline-row.stacked { max-width: 300px; margin-left: 0; }
+    .tagline-row.stacked img { max-width: 200px; }
 
     /* ── SOCIAL ── */
     .social-grid { display: flex; gap: 32px; margin-top: 40px; flex-wrap: wrap; }
@@ -359,6 +368,7 @@
     <div class="nav-links">
       <a href="#downloads">Downloads</a>
       <a href="#logo">Logo</a>
+      <a href="#tagline">Tagline</a>
       <a href="#social">Social</a>
       <a href="#color">Color</a>
       <a href="#type">Type</a>
@@ -405,7 +415,14 @@
           <p>Pre-cropped to a 110×110px circle for profile images across platforms.</p>
           <a class="dl-link" href="https://drive.google.com/drive/folders/149LzhxAF9fLaerTadAdKfLpBn9ObwkO_?usp=sharing" target="_blank" rel="noopener">Go to downloads ↗</a>
         </div>
+        <div class="dl-card">
+          <h3>Standalone taglines</h3>
+          <p>The tagline on its own, no logo attached — one line and stacked, in every approved color.</p>
+          <a class="dl-link" href="https://drive.google.com/drive/folders/16JPorGuk_6c8MPsrbrzn7t_OjJyOLXYE?usp=sharing" target="_blank" rel="noopener">Go to downloads ↗</a>
+        </div>
       </div>
+
+      <p class="rules-note reveal"><strong>A note on file names:</strong> the number at the end of a file name (1–6) is just the color it's saved in — those six numbers match the six shades in Color below, pulled from the Fitzpatrick skin tone scale. Everything before that number is just describing what the file is. <em>SM_primarylogo_tagline_6</em>, for example, is the primary logo with tagline, saved in color 6.</p>
 
       <p class="rules-note reveal"><strong>Not sure which file to grab?</strong> Reach for a PNG first — it's what you'll need close to 90% of the time. Each folder has two sizes: the small one for anything on a screen (email signatures, social posts, docs), and the one labeled "@4x" for anything bigger or higher-resolution, like large print or signage. You'll also see PDF, SVG, and EPS files sitting in each folder. You don't need to know exactly what sets them apart — they're just there in case a printer or vendor ever asks for a specific one by name.</p>
     </div>
@@ -470,6 +487,33 @@
         <li>→ <strong>Tagline lockup is optional, not default.</strong> Use the wordmark-only version for most applications; reach for the tagline version when there's room to let it breathe.</li>
       </ul>
       <p class="rules-note reveal"><strong>On black &amp; white:</strong> solid black and solid white one-color versions are downloadable in Downloads above, but they're a fallback, not a first choice. Reach for them only when a platform, vendor, or print method specifically requires single-color art — engraving, one-color screen printing, a fax machine that still exists somewhere. Everywhere else, use one of the full-color combinations above.</p>
+    </div>
+  </section>
+
+  <!-- TAGLINE -->
+  <section class="sec" id="tagline" style="background: var(--bg);">
+    <div class="sec-inner">
+      <div class="sec-bar reveal"></div>
+      <div class="sec-label reveal">Tagline</div>
+      <h2 class="sec-h2 reveal">Standalone tagline.</h2>
+      <p class="sec-body reveal">Sometimes the tagline needs to stand on its own — a sign-off, a footer, a spot where the full logo lockup would be too much. Two orientations cover most needs: one line for wide spaces, stacked for anywhere narrower.</p>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">One line</div>
+        <div class="tagline-row" style="background:#3B2320;">
+          <img src="SM_tagline_oneline_1.svg" alt="S.K.I.N. Method tagline, one line, Type 1 on dark">
+        </div>
+        <div class="tagline-row" style="background:#FFFFFF; border:1px solid rgba(59,35,32,0.12);">
+          <img src="SM_tagline_oneline_4.svg" alt="S.K.I.N. Method tagline, one line, Type 4 on white">
+        </div>
+      </div>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">Stacked, left-justified</div>
+        <div class="tagline-row stacked" style="background:#FFFFFF; border:1px solid rgba(59,35,32,0.12);">
+          <img src="SM_tagline_stackedleft_6.svg" alt="S.K.I.N. Method tagline, stacked left-justified, Type 6 on white">
+        </div>
+      </div>
     </div>
   </section>
 
