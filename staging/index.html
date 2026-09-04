@@ -219,7 +219,10 @@
       background: #FFFFFF; border: 1px solid var(--rule); border-radius: 4px;
       padding: 14px; box-shadow: 0 4px 14px rgba(59,35,32,0.10);
     }
-    .card-frame img { width: 100%; height: auto; display: block; border-radius: 2px; }
+    .card-img-wrap {
+      aspect-ratio: 2.75 / 1.10; overflow: hidden; border-radius: 2px;
+    }
+    .card-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 
     /* ── (legacy / archived presentation styles) ── */
     .yn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
@@ -689,10 +692,10 @@
         <div class="logo-group-title">Fronts</div>
         <div class="card-row">
           <div class="card-item">
-            <div class="card-frame"><img src="SM_card_front_rebecca.png" alt="Business card front — Rebecca Westphal, LE"></div>
+            <div class="card-frame"><div class="card-img-wrap"><img src="SM_card_front_rebecca.png" alt="Business card front — Rebecca Westphal, LE"></div></div>
           </div>
           <div class="card-item">
-            <div class="card-frame"><img src="SM_card_front_genevieve.png" alt="Business card front — Genevieve Schultz, LE"></div>
+            <div class="card-frame"><div class="card-img-wrap"><img src="SM_card_front_genevieve.png" alt="Business card front — Genevieve Schultz, LE"></div></div>
           </div>
         </div>
       </div>
@@ -701,22 +704,22 @@
         <div class="logo-group-title">Backs — one per Type color</div>
         <div class="card-row">
           <div class="card-item">
-            <div class="card-frame"><img src="SM_card_back_type1.png" alt="Business card back — Type 1"></div>
+            <div class="card-frame"><div class="card-img-wrap"><img src="SM_card_back_type1.png" alt="Business card back — Type 1"></div></div>
           </div>
           <div class="card-item">
-            <div class="card-frame"><img src="SM_card_back_type2.png" alt="Business card back — Type 2"></div>
+            <div class="card-frame"><div class="card-img-wrap"><img src="SM_card_back_type2.png" alt="Business card back — Type 2"></div></div>
           </div>
           <div class="card-item">
-            <div class="card-frame"><img src="SM_card_back_type3.png" alt="Business card back — Type 3"></div>
+            <div class="card-frame"><div class="card-img-wrap"><img src="SM_card_back_type3.png" alt="Business card back — Type 3"></div></div>
           </div>
           <div class="card-item">
-            <div class="card-frame"><img src="SM_card_back_type4.png" alt="Business card back — Type 4"></div>
+            <div class="card-frame"><div class="card-img-wrap"><img src="SM_card_back_type4.png" alt="Business card back — Type 4"></div></div>
           </div>
           <div class="card-item">
-            <div class="card-frame"><img src="SM_card_back_type5.png" alt="Business card back — Type 5"></div>
+            <div class="card-frame"><div class="card-img-wrap"><img src="SM_card_back_type5.png" alt="Business card back — Type 5"></div></div>
           </div>
           <div class="card-item">
-            <div class="card-frame"><img src="SM_card_back_type6.png" alt="Business card back — Type 6"></div>
+            <div class="card-frame"><div class="card-img-wrap"><img src="SM_card_back_type6.png" alt="Business card back — Type 6"></div></div>
           </div>
         </div>
       </div>
