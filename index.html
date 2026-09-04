@@ -212,6 +212,15 @@
     }
     .type-google-note a { color: var(--text); font-weight: 600; }
 
+    /* ── BUSINESS CARDS ── */
+    .card-row { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 16px; }
+    .card-item { flex: 0 1 240px; display: flex; flex-direction: column; gap: 10px; }
+    .card-frame {
+      background: #FFFFFF; border: 1px solid var(--rule); border-radius: 4px;
+      padding: 14px; box-shadow: 0 4px 14px rgba(59,35,32,0.10);
+    }
+    .card-frame img { width: 100%; height: auto; display: block; border-radius: 2px; }
+
     /* ── (legacy / archived presentation styles) ── */
     .yn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
     .yn-card { background: var(--bg-2); padding: 32px; border-radius: 2px; }
@@ -362,6 +371,7 @@
     @media (max-width: 600px) {
       .dl-grid { grid-template-columns: 1fr; }
       .color-grid { grid-template-columns: 1fr; }
+      .card-item { flex: 1 1 100%; max-width: 280px; }
     }
     @media (max-width: 480px) { .nav-links { display: none; } }
   </style>
@@ -378,6 +388,7 @@
       <a href="#tagline">Tagline</a>
       <a href="#color">Color</a>
       <a href="#type">Type</a>
+      <a href="#cards">Cards</a>
     </div>
   </nav>
 
@@ -385,7 +396,7 @@
   <!-- Remember: bump the date below every time this page is edited/deployed -->
   <section class="hero" id="top">
     <div class="hero-text">
-      <div class="hero-updated">Updated 07.30.26</div>
+      <div class="hero-updated">Updated 09.04.26</div>
     </div>
     <div class="hero-lockup-wrap">
       <img class="hero-lockup" src="SM_hero_lockup.webp" alt="S.K.I.N. Method">
@@ -662,6 +673,89 @@
             <div class="type-google-note">Same DM Sans family — uppercase with wide letter-spacing for labels and captions.</div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="sec" id="cards" style="background: var(--bg-2);">
+    <div class="sec-inner">
+      <div class="sec-bar reveal"></div>
+      <div class="sec-label reveal">Business Cards</div>
+      <h2 class="sec-h2 reveal">Mini cards, six ways.</h2>
+      <p class="sec-body reveal">Sized for <a href="https://www.moo.com/us/business-cards/minicards" target="_blank" rel="noopener">Moo's mini card format</a> — 2.75" × 1.10", a little smaller than a standard card, so it feels considered rather than generic. Two fronts, one per teammate, and six backs — one per Type color from the palette above, each on white stock. Shown to scale below.</p>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">Fronts</div>
+        <div class="card-row">
+          <div class="card-item">
+            <div class="card-frame"><img src="SM_card_front_rebecca.png" alt="Business card front — Rebecca Westphal, LE"></div>
+          </div>
+          <div class="card-item">
+            <div class="card-frame"><img src="SM_card_front_genevieve.png" alt="Business card front — Genevieve Schultz, LE"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">Backs — one per Type color</div>
+        <div class="card-row">
+          <div class="card-item">
+            <div class="card-frame"><img src="SM_card_back_type1.png" alt="Business card back — Type 1"></div>
+          </div>
+          <div class="card-item">
+            <div class="card-frame"><img src="SM_card_back_type2.png" alt="Business card back — Type 2"></div>
+          </div>
+          <div class="card-item">
+            <div class="card-frame"><img src="SM_card_back_type3.png" alt="Business card back — Type 3"></div>
+          </div>
+          <div class="card-item">
+            <div class="card-frame"><img src="SM_card_back_type4.png" alt="Business card back — Type 4"></div>
+          </div>
+          <div class="card-item">
+            <div class="card-frame"><img src="SM_card_back_type5.png" alt="Business card back — Type 5"></div>
+          </div>
+          <div class="card-item">
+            <div class="card-frame"><img src="SM_card_back_type6.png" alt="Business card back — Type 6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="color-caveat reveal"><strong>About the QR code:</strong> I'm not sure if you wanted a QR code or not, but added it as an option to consider. If you want to move forward with a QR code, we'll need to generate a dynamic one just for you (it's free). It can point to Instagram for now, and the code can be swapped to a booking site — or whatever link you want — later without reprinting anything. (The FPO on top means "for placement only" — there to check scale and position, and to remind me to replace it with a QR for you, not Big Sis, before it goes to print.)</div>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">Next steps</div>
+        <table class="steps-table">
+          <thead>
+            <tr>
+              <th style="width:50%">Action</th>
+              <th style="width:20%">Owner</th>
+              <th style="width:30%">Timeline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>→ Confirm names, titles, email, phone numbers, and handle above are correct</td>
+              <td><span class="owner-tag owner-skin">S·K·I·N·</span></td>
+              <td>Before print</td>
+            </tr>
+            <tr>
+              <td>→ Weigh in on paper stock and quantity — see <a href="https://www.moo.com/us/business-cards/minicards" target="_blank" rel="noopener">Moo's pricing</a> for options</td>
+              <td><span class="owner-tag owner-skin">S·K·I·N·</span></td>
+              <td>Before print</td>
+            </tr>
+            <tr>
+              <td>→ Prep final print-ready files to Moo's specs</td>
+              <td><span class="owner-tag owner-bs">Erin</span></td>
+              <td>Once approved</td>
+            </tr>
+            <tr>
+              <td>→ Place the order — Erin can order directly if reimbursed for cost, or hand off the files for S·K·I·N· to order themselves</td>
+              <td><span class="owner-tag owner-both">Both</span></td>
+              <td>Before print</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
