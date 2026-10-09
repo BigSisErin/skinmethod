@@ -228,6 +228,14 @@
     }
     .mock-frame img { width: 100%; height: auto; display: block; }
     .mock-frame-sheet { max-width: 520px; }
+    .mock-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px; align-items: start; }
+    .mock-pair figure { margin: 0; }
+    .mock-pair .mock-note { margin-top: 12px; }
+    .spec-list { list-style: none; margin: 16px 0 0; padding: 0; max-width: 760px; }
+    .spec-list li { font-family: var(--ff-body); font-size: 16px; line-height: 1.65; padding: 6px 0; }
+    .spec-list li strong { font-weight: 700; }
+    .spec-list a { color: var(--text); font-weight: 700; }
+    @media (max-width: 700px) { .mock-pair { grid-template-columns: 1fr; } }
     .color-caveat a { color: var(--text); font-weight: 700; }
     .mock-note a { color: var(--text); font-weight: 700; }
     .mock-note { font-family: var(--ff-body); font-size: 15px; line-height: 1.65; color: var(--text-mid); max-width: 760px; margin-top: 14px; }
@@ -401,6 +409,7 @@
       <a href="#type">Type</a>
       <a href="#stickers">Stickers</a>
       <a href="#cards">Cards</a>
+      <a href="#backdrop">Backdrop</a>
     </div>
   </nav>
 
@@ -408,7 +417,7 @@
   <!-- Remember: bump the date below every time this page is edited/deployed -->
   <section class="hero" id="top">
     <div class="hero-text">
-      <div class="hero-updated">Updated 10.07.26</div>
+      <div class="hero-updated">Updated 10.09.26</div>
     </div>
     <div class="hero-lockup-wrap">
       <img class="hero-lockup" src="SM_hero_lockup.webp" alt="S.K.I.N. Method">
@@ -832,6 +841,77 @@
             </tr>
             <tr>
               <td>→ Place the order — Erin can order directly if reimbursed for cost, or hand off the files for S·K·I·N· to order themselves</td>
+              <td><span class="owner-tag owner-both">Both</span></td>
+              <td>Before print</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACKDROP: STEP AND REPEAT -->
+  <section class="sec" id="backdrop" style="background: var(--bg-2);">
+    <div class="sec-inner">
+      <div class="sec-bar reveal"></div>
+      <div class="sec-label reveal">Step and Repeat</div>
+      <h2 class="sec-h2 reveal">One wall, six skin tones.</h2>
+      <p class="sec-body reveal">A backdrop for photos and events, with your logo repeating in all six Type colors from the palette above. The colors travel across each row and the rows are staggered, so the wall stays balanced and no single tone owns a corner. Sized for an 8' × 8' <a href="https://www.vistaprint.com/signs-posters/step-repeat-banners" target="_blank" rel="noopener">Vistaprint step and repeat banner</a> with a stand.</p>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">In context, and the pattern on its own</div>
+        <div class="mock-pair">
+          <figure>
+            <div class="mock-frame"><img src="SM_stepandrepeat_mockup.jpg" alt="Mockup of an 8 foot by 8 foot step and repeat banner on a black telescopic stand in a retail space, covered in the S.K.I.N. Method logo repeated in six skin tone colors from peach to dark brown." loading="lazy"></div>
+            <p class="mock-note">The banner on its stand, for scale and feel.</p>
+          </figure>
+          <figure>
+            <div class="mock-frame"><a href="SM_stepandrepeat_pattern_full.png" target="_blank" rel="noopener"><img src="SM_stepandrepeat_pattern.png" alt="The step and repeat pattern on its own: rows of the S.K.I.N. Method logo in six skin tone colors, staggered row to row, on a white background." loading="lazy"></a></div>
+            <p class="mock-note">The full pattern, flat. <a href="SM_stepandrepeat_pattern_full.png" target="_blank" rel="noopener">Open full size</a></p>
+          </figure>
+        </div>
+      </div>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">The setup</div>
+        <ul class="spec-list">
+          <li>→ <strong>Size:</strong> 8' × 8' (96" × 96")</li>
+          <li>→ <strong>Stand:</strong> aluminum telescopic frame that adjusts from 3' to 8' tall and 4' to 10' wide</li>
+          <li>→ <strong>Fabric:</strong> 100% polyester, wrinkle and crease resistant</li>
+          <li>→ <strong>Order:</strong> the Graphic + Frame bundle, which includes a carrying bag. Pricing and delivery show up on <a href="https://www.vistaprint.com/signs-posters/step-repeat-banners" target="_blank" rel="noopener">Vistaprint's page</a> once you pick a delivery location.</li>
+        </ul>
+      </div>
+
+      <div class="color-caveat reveal"><strong>About color:</strong> treat the mockup as a read on layout and balance, not an exact color match. Fabric prints differently than a screen, and the lightest tones will look paler in person.</div>
+
+      <div class="logo-group reveal">
+        <div class="logo-group-title">Next steps</div>
+        <table class="steps-table">
+          <thead>
+            <tr>
+              <th style="width:50%">Action</th>
+              <th style="width:20%">Owner</th>
+              <th style="width:30%">Timeline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>→ Review the pattern and send any changes to the color mix or spacing</td>
+              <td><span class="owner-tag owner-skin">S·K·I·N·</span></td>
+              <td>Before print</td>
+            </tr>
+            <tr>
+              <td>→ Approve the pattern and the 8' × 8' with stand</td>
+              <td><span class="owner-tag owner-skin">S·K·I·N·</span></td>
+              <td>Before print</td>
+            </tr>
+            <tr>
+              <td>→ Prep print-ready files to Vistaprint's specs</td>
+              <td><span class="owner-tag owner-bs">Erin</span></td>
+              <td>Once approved</td>
+            </tr>
+            <tr>
+              <td>→ Place the order. Erin can order directly if reimbursed for cost, or hand off the files for S·K·I·N· to order themselves</td>
               <td><span class="owner-tag owner-both">Both</span></td>
               <td>Before print</td>
             </tr>
